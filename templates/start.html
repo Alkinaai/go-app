@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+
+  {% block content %}
+  <nav class="navbar navbar-expand-lg mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item align-items-center">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/start.css')}}">
+            <a class="nav-link p-2 p-lg-3 ho start" aria-current="page" href="{{url_for('start')}}">Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Innenputz')}}">Innenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('aussenputz')}}">aussenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Klinkerriemchen')}}">Klinkerriemchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-white kn" href="{{url_for('Kontact')}}">Kontact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="landing p-4">
+        <div class="container text-center pt-4 pb-3">
+            <h1 class="mt-4 mb-4 fw-bold">Ihr Partner für hochwertige Bausanierungen</h1>
+            <h5 class="mb-4 fw-bold">Spezialisiert auf Fassaden, Innen- und Außenputz sowie Klinkerriemchen</h5>
+            <button class="btn btn-primary main-btn rounded-pill fs-6 bg-black ">Mehr Erfahren</button>
+        </div>
+        <div class="col-md-6 col-lg-4 mt-1 text-center w-auto ms-auto me-auto ">
+            <img class="img-fluid" src="{{ url_for('static', filename='image/house.png')}}" >
+        </div>
+    </div>
+    <div class="uber p-5 text-center align-items-center">
+        <div class="container">
+            <h3 class="mb-4">Über Uns</h3>
+            <p class="mt-2 mb-3 fw-bold">
+                Seit 2022 sind wir Ihr verlässlicher Partner für hochwertige Bausanierungen und Fassadenarbeiten. Unsere Expertise umfasst zudem thermische Sanierungen, Malerarbeiten und die Erstellung von Wärmedämmfassaden. Mit Leidenschaft und Präzision verwandeln wir Ihre Bauprojekte in wahre Meisterwerke.
+            </p>
+            <p class="mt-2 mb-3 fw-bold">Wir setzen auf höchste Qualität, modernste Techniken und erstklassige Materialien, um sicherzustellen, dass Ihre Anforderungen nicht nur erfüllt, sondern übertroffen werden. Vertrauen Sie auf M&M Bauteam – Ihr Spezialist für nachhaltige und ästhetische Lösungen im Bauwesen.</p>
+        </div>
+    </div>
+    <div class="uns">
+        <div class="text-center mt-4 mb-4">
+            <h4>Unsere Lieferanten & Partner in Zusammenarbeit</h4>
+        </div>
+        <div class="container">
+            <div class="row text-center ">
+                <ul class="w-100">
+                    <a class="col-lg-2" href="#"><img src="{{ url_for('static', filename='image/frame218959-hbf-200h.png')}}"></a>
+                    <a class="col-lg-2" href="#"><img src="{{ url_for('static', filename='image/alsecco.png')}}"></a>
+                    <a class=" col-lg-2" href="#"><img src="{{ url_for('static', filename='image/Brillux.png')}}"></a>
+                    <a class="col-lg-2" href="#"><img src="{{ url_for('static', filename='image/capital.png')}}"></a>
+                    <a class="col-lg-2" href="#"><img src="{{ url_for('static', filename='image/knauf.png')}}"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wir text-center pt-5 pb-5">
+        <div class="container">
+            <div>
+                <h5 class="mt-4 mb-5">Was wir für Sie tun können</h5>
+            </div>
+            <div class="text-content mt-4">
+                <ul class="row">
+                    <div class="col-md-6 col-lg-4 gray mt-4">
+                        <img class="media img-fluid" src="{{ url_for('static', filename='image/painting inside house.png')}}" >
+                        <div class="media-content mt-3 mb-3">
+                            <h3 class="mt-2 mb-3">Perfekter Innenputz</h3>
+                            <p class="mb-5">Unsere Innenputzarbeiten bieten Ihnen glatte und langlebige Oberflächen, die Ihre Wohnräume verschönern und den Wert Ihrer Immobilie steigern. Mit hochwertigen Materialien und präziser Verarbeitung schaffen wir eine gemütliche Wohnatmosphäre.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gray mt-4">
+                        <img class="media img-fluid" src="{{ url_for('static', filename='image/paint_outside.png')}}" >
+                        <div class="media-content mt-3 mb-3">
+                            <h3 class="mt-2 mb-3">Hochwertiger Außenputz</h3>
+                            <p class="mb-5">Unser Außenputz schützt Ihre Fassade vor Witterungseinflüssen und sorgt gleichzeitig für eine ansprechende Optik. Durch den Einsatz moderner Techniken und Materialien gewährleisten wir eine langlebige und wetterbeständige Verkleidung</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gray mt-4">
+                        <img class="media img-fluid" src="{{ url_for('static', filename='image/wall.png')}}" >
+                        <div class="media-content mt-3 mb-3">
+                            <h3 h3 class="mt-2 mb-3">Stilvolle Klinkerriemchen</h3>
+                            <p class="mb-5" >Unsere Klinkerriemchen verleihen Ihrem Gebäude einen besonderen Charme und verbinden traditionelle Ästhetik mit moderner Bauweise. Sie sind robust, langlebig und pflegeleicht, ideal für eine zeitlose Fassadengestaltung..</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <div class="lage pt-5 pb-5 text-center">
+        <div class="container">
+            <h4 class="mt-3 mb-3">Unsere Lage</h4>
+            <h3 class="mt-3 mb-3">Besuchen Sie uns in unserem Büro</h3>
+            <div class="container">
+                <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.8479523062015!2d13.448969575665815!3d52.44566904173139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a845892f58fff3%3A0x58995783cb367a4b!2sParchimer%20Allee%2C%2012359%20Berlin-Bezirk%20Neuk%C3%B6lln%2C%20Germany!5e0!3m2!1sen!2s!4v1722183571703!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+        </div>
+    </div>
+  {% endblock%}
+ 

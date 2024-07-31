@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css.map')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    
+</head>
+<body>
+  
+    {% block content %}
+    {% endblock content %}
+
+    <div class="footer">
+        <div class="containter mt-5 mb-5 ">
+           <div class="row theorder">
+            <div class="col-md-7 col-lg-7 ">
+              <h5 class="pt-5">EINFACH DAS FORMULAR AUSFÜLLEN UND WIR RUFEN SIE ZURÜCK</h5>
+              <form action="{{url_for('addrec')}}" method="POST">
+                <br>
+                <input class="w-100" type="text" placeholder="name" name="name" required>
+                <br>
+                <input class="w-100" type="text" placeholder="email" name="email" required>
+                <br>
+                <input class="w-100" type="text" placeholder="telefon" name="telefon" required>
+                <br>
+                <textarea class="w-100" placeholder="Note" name="note" required></textarea>
+                <br>
+                <input class="btn btn primary w-100 bg-black text-white r-12" type="submit" value="submit">
+              </form>
+          </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="start-column2">
+                        <div class="start-frame15">
+                          <span class="start-text30 fw-bold">KONTAKTDATEN</span>
+                        </div>
+                        <div class="start-frame3 contact">
+                          <span class="start-text31 fw-bold">Address</span>
+                          <span class="start-text32">
+                            <span>Parchimer Allee 16</span>
+                            <br />
+                            <span>12359 Berlin</span>
+                          </span>
+                        </div>
+                        <div class="start-frame6 contact">
+                          <span class="start-text36 fw-bold">Phone Numbers</span>
+                          <span class="start-text37">
+                            <span class="fw-bold">Office:</span>
+                            <br />
+                            <span>030 966 155 93</span>
+                          </span>
+                          <span class="start-text41">
+                            <span class="fw-bold">Mobile:</span>
+                            <br />
+                            <span>0176 649 856 89</span>
+                          </span>
+                        </div>
+                        <div class="start-frame7 contact">
+                          <span class="start-text45 fw-bold ">Email</span>
+                          <span class="start-text46 ">info@m-m-bauteam.de</span>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/all.min.js')}}"></script>
+</body>
+</html>

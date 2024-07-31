@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+  {% block content %}
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho start" aria-current="page" href="{{url_for('start')}}">Start</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link p-2 p-lg-3 ho Innenputz" href="{{url_for('Innenputz')}}">Innenputz</a>
+          </li>
+          <li class="nav-item">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/aussenputz.css')}}">
+            <a class="nav-link p-2 p-lg-3 ho aussenputz"  href="{{url_for('aussenputz')}}">aussenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Klinkerriemchen')}}">Klinkerriemchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-white kn" href="{{url_for('Kontact')}}">Kontact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="text-center mm">
+    <div class="container">
+      
+        <h1 class="m-4">Hochwertiger Außenputz für jedes Projekt</h1>
+        <p>
+          Unsere Außenputzarbeiten bieten die perfekte Lösung für alle Anforderungen und Wünsche. Egal, ob Standard- oder Spezialanforderungen – wir haben die Expertise und die Ressourcen, um jede Herausforderung zu meistern. Lassen Sie sich von unserer Qualität und unserem Engagement überzeugen.
+        </p>
+      
+    </div>
+  </div>
+
+  
+  <div class="flex flex-col w-full gap-4 mt-5 mb-5 p-0 m-1 ">
+
+        <div class="container">
+        </div>
+        <div class="mt-5 mm p-0">
+            <div class="container p-0">
+                <div class="row">
+                
+                    <div class="col-md-6 col-lg-6 h-50 par mt-auto">
+                        <h3>Standard Außenputz</h3>
+                        <p>Wir bieten umfassende Dienstleistungen im Bereich Außenputz, um sicherzustellen, dass Ihre Fassade nicht nur gut aussieht, sondern auch optimal geschützt ist. Unsere Experten verwenden hochwertige Materialien und fortschrittliche Techniken, um eine langlebige und wetterfeste Oberfläche zu schaffen.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 me-auto mt-5">
+                        <img width="100%"  src="{{url_for('static', filename='image/aussenputz.03bd74e7.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="align-items-start mt-5 mm">
+        <div class="container">
+            <div class="row theorder">
+                <div class="col-md-6 col-lg-6 mt-5">
+                    <img width="100%"  src="{{ url_for('static', filename='image/aussenputz1.54817e8a.png')}}" alt="">
+    
+                </div>
+                <div class="col-md-6 col-lg-6 mt-5 mt-auto">
+                    <h3>Individuelle Außenputzlösungen</h3>
+                    <p>Ihre Bedürfnisse sind einzigartig, und das sollten auch Ihre Außenputzlösungen sein. Wir arbeiten eng mit Ihnen zusammen, um maßgeschneiderte Lösungen zu entwickeln, die genau Ihren Vorstellungen entsprechen. Von speziellen Texturen bis hin zu einzigartigen Designs – wir setzen Ihre Vision um.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5 mm">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-6 col-lg-6 h-50 par mt-auto">
+                    <h3>Effiziente Wärmedämmung</h3>
+                    <p>Eine effektive Wärmedämmung ist entscheidend für die Energieeffizienz Ihres Gebäudes. Unsere Wärmedämmungslösungen helfen, Heiz- und Kühlkosten zu senken und gleichzeitig den Wohnkomfort zu erhöhen. Wir verwenden modernste Dämmmaterialien, um sicherzustellen, dass Ihr Gebäude den höchsten Standards entspricht.</p>
+                </div>
+                <div class="col-md-6 col-lg-6 mt-5">
+                    <img width="100%" src="{{url_for('static', filename='image/aussenputz2.5df21320.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thegrid mb-5">
+  <div class="container mt-4 mb-5">
+    <div class="text-center">
+      <h1>Unsere Projekte</h1>
+    <p>Lassen Sie sich von unseren abgeschlossenen Projekten inspirieren. Jede unserer Arbeiten spiegelt unser Engagement für Qualität und Kundenzufriedenheit wider. Schauen Sie sich an, wie wir anderen Kunden geholfen haben, ihre Visionen zu verwirklichen.</p>
+    </div>
+  </div>
+  
+  <div class="p-0 mb-1">
+    <div class="container">
+      <div class="row h-285">
+          <div class="col-lg-4 ,b-1">
+              <img width="435px" height="285px" src="static/image/gallery.9ccba7a6.jpeg" alt="">
+          </div>
+          <div class="col-lg-4">
+              <img width="435px" height="285px" src="static/image/gallery1.3fb631a1.jpeg" alt="">
+          </div>
+          <div class="col-md-6 col-lg-4">
+              <img width="435px" height="285px" src="static/image/gallery2.2dd7e0cd.jpeg" alt="">
+          </div>
+          <div class="col-md-6 col-md-3">
+              
+          </div>
+          <div class="col-md-6 col-md-3">
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row ">
+      <div class="col-lg-4  ">
+          <img width="435px" height="285px" src="static/image/gallery3.45272093.jpeg" alt="">
+      </div>
+      <div class="col-lg-4">
+          <img width="435px" height="285px" src="static/image/gallery4.a306b6a1.png" alt="">
+      </div>
+      <div class="col-md-6 col-lg-4">
+          <img width="435px" height="285px" src="static/image/gallery5.8ced5170.jpeg" alt="">
+      </div>
+      <div class="col-md-6 col-md-3">
+          
+      </div>
+      <div class="col-md-6 col-md-3">
+          
+      </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  {% endblock %}

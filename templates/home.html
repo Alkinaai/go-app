@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css.map')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    <style>
+      .navbar {
+        border-bottom: 1px solid #333333;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mm">
+        <div class="container">
+          <a class="navbar-brand" href="{{url_for('start')}}">
+            <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho" aria-current="page" href="{{url_for('home')}}">Home</a>
+              </p>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('enternew')}}">Add New Customer</a>
+              </p>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('list')}}">Review and Edit Customers list</a>
+              </p>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <div class="container text-center mb-5 ">
+            <div class="">
+                <h1>Welcome to M&M Bauteam Database</h1>
+            </div>
+            
+
+        </div>
+      </div>
+      <div class=" mt-5 fw-bold fs-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 ms-auto me-auto">
+              <p>
+                To add a new contact to the database click on <a href="{{url_for('enternew')}}">Add New Customer</a>
+              </p>
+              <p>
+                To Review customers' list or Edit a customer's contant, click on <a href="{{url_for('list')}}">Review and Edit Customers list</a>
+              </p>
+              <p>
+                To Return to M&M Bauteam site press the logo image on top left or click <a href="{{url_for('start')}}">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>

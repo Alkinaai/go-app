@@ -1,0 +1,121 @@
+{% extends ('layout.html') %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho start" aria-current="page" href="{{url_for('start')}}">Start</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link p-2 p-lg-3 ho Innenputz" href="{{url_for('Innenputz')}}">Innenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('aussenputz')}}">aussenputz</a>
+          </li>
+          <li class="nav-item">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/Klinkerriemchen.css')}}">
+            <a class="nav-link p-2 p-lg-3 ho Klinkerriemchen" href="{{url_for('Klinkerriemchen')}}">Klinkerriemchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-white kn" href="{{url_for('Kontact')}}">Kontact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="mm">
+    <div class="container text-center">
+        <h1 class="mt-5 mb-4">Stilvolle Klinkerriemchen für Ihr Zuhause</h1>
+        <p class="lh-3">
+            Unsere Klinkerriemchen bieten die perfekte Kombination aus traditioneller Ästhetik und moderner Funktionalität. Sie verleihen Ihrem Gebäude einen einzigartigen Charme und sorgen gleichzeitig für eine robuste und pflegeleichte Oberfläche. Entdecken Sie die vielfältigen Möglichkeiten, die unsere Klinkerriemchen bieten.</p>
+    </div>
+</div>
+
+<div class="mm ">
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-md-5 col-lg-6 h-50 par mt-auto">
+                <h3 class="mb-2">Vorteile von Klinkerriemchen</h3>
+                <p text-start>Klinkerriemchen sind nicht nur optisch ansprechend, sondern bieten auch zahlreiche praktische Vorteile. Sie sind langlebig und weisen eine hohe Beständigkeit gegen Witterungseinflüsse und mechanische Belastungen auf. Zudem sind sie wartungsarm, da sie einfach zu reinigen und zu pflegen sind. Klinkerriemchen tragen auch zur Energieeffizienz bei, da sie verbesserte Wärmedämmeigenschaften bieten. Ihre Vielseitigkeit macht sie sowohl für Innen- als auch für Außenbereiche geeignet.</p>
+            </div>
+            <div class="col-md-6 col-lg-6 d-flex align-items-end mt-5 mr-0 pr-0">
+                <img width="100%" src="{{url_for('static', filename='image/klinkerriemchen.b731027d.png ')}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mm">
+    <div class="container">
+        <div class="row theorder">
+
+            <div class="col-md-6 col-lg-6 mt-5">
+                <img width="100%" src="{{url_for('static', filename='image/klinkerriemchen1.0bdc8226.png ')}}" alt="">
+            </div>
+        
+            <div class="col-md-5 col-lg-6 h-50 par first mt-auto ">
+                <h3 class="mb-2">Anwendungen und Stile</h3>
+                <p>
+                    Unsere Klinkerriemchen sind vielseitig einsetzbar und in einer Vielzahl von Farben, Texturen und Formaten erhältlich. Sie eignen sich ideal für Fassadenverkleidungen, um Ihrer Gebäudefassade eine elegante und zeitlose Optik zu verleihen. Auch in der Innenraumgestaltung schaffen sie einzigartige Akzente. Perfekt sind sie auch für die Gestaltung von auffälligen und attraktiven Akzentwänden.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 mm">
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-md-5 col-lg-6 justify-text-end h-50 par mt-auto">
+                <h3 class="mb-2">Einfache und Effiziente Installation</h3>
+                <p>
+                    Unsere erfahrenen Fachleute sorgen für eine schnelle und präzise Installation Ihrer Klinkerriemchen. Der Prozess umfasst die gründliche Vorbereitung der Oberfläche für optimale Haftung, das sorgfältige Anbringen der Klinkerriemchen mit hochwertigen Klebstoffen und die fachgerechte Verfugen für eine perfekte Optik und maximale Stabilität.</p>
+            </div>
+            <div class="col-md-6 col-lg-6 mt-5">
+                <img width="100%" src="{{url_for('static', filename='image/klinkerriemchen2.1f1ff6af.png ')}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gridcss container pr-0 pl-0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grid.css') }}">
+    <div  class="mt-8 py-4 grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-1">
+
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/8788e0d00fd68456973bbf12566e0044.9b5fb77c.jpeg ')}}" style="color: transparent;">
+        </div>
+        
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/cbb1d0a72c8abf2ee91030a2cf315803.4f1c2cb1.png ')}}" style="color: transparent;">
+        </div>
+
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/dec78bc03c14cb772a83feb4d57b7de0.23a4e844.jpeg ')}}" style="color: transparent;">
+        </div>
+
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/c823116debda9df76dde5df77e216043.c18c6949.jpeg ')}}" style="color: transparent;">
+        </div>
+
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/3d06bcc08ad653d31eaa12dd3c96a6c5.596548b2.jpeg ')}}" style="color: transparent;">
+        </div>
+
+        <div class="h-full max-w-full"><img alt="gallery" loading="lazy" width="640" height="480" decoding="async" data-nimg="1" class="w-full h-full" src="{{url_for('static', filename='image/02870a2cddaca208f5b554ce023fda75.10c09143.jpeg ')}}" style="color: transparent;">
+        </div>
+
+
+    </div>
+
+</div>
+
+
+{% endblock content %}

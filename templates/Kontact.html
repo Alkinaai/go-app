@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css.map')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.main.css')}}" />
+    <style>
+      .kn {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item align-items-center">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/start.css')}}">
+            <a class="nav-link p-2 p-lg-3 ho" aria-current="page" href="{{url_for('start')}}">Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Innenputz')}}">Innenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('aussenputz')}}">aussenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Klinkerriemchen')}}">Klinkerriemchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-white kn" href="{{url_for('Kontact')}}">Kontact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="p-4 mb-5">
+        <div class="container">
+            <h2 class="font-[800] text-[1.6rem] mb-5">Über Uns</h2>
+            <p>Seit 2022 sind wir Ihr verlässlicher Partner für hochwertige Bausanierungen und Fassadenarbeiten. Unsere Expertise umfasst zudem thermische Sanierungen, Malerarbeiten und die Erstellung von Wärmedämmfassaden. Mit Leidenschaft und Präzision verwandeln wir Ihre Bauprojekte in wahre Meisterwerke.
+
+                Wir setzen auf höchste Qualität, modernste Techniken und erstklassige Materialien, um sicherzustellen, dass Ihre Anforderungen nicht nur erfüllt, sondern übertroffen werden. Vertrauen Sie auf M&M Bauteam – Ihr Spezialist für nachhaltige und ästhetische Lösungen im Bauwesen.</p>
+        
+        </div>
+
+        <div class="footer">
+            
+
+            <div class="container">
+              <h1 class="mb-4 mt-4">Unsere Lage</h1>
+
+            <p>Besuchen Sie uns in unserem Büro</p>
+
+              <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.8479523062015!2d13.448969575665815!3d52.44566904173139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a845892f58fff3%3A0x58995783cb367a4b!2sParchimer%20Allee%2C%2012359%20Berlin-Bezirk%20Neuk%C3%B6lln%2C%20Germany!5e0!3m2!1sen!2s!4v1722183571703!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <div class="footer footer-bg">
+          <div class="containter mt-5 mb-5 ">
+             <div class="row theorder">
+                  <div class="col-md-7 col-lg-7 ">
+                      <h4 class="pt-5">EINFACH DAS FORMULAR AUSFÜLLEN UND WIR RUFEN SIE ZURÜCK</h4>
+                      <form action="{{url_for('addrec')}}" method="POST">
+                        <br>
+                        <input class="w-100" type="text" placeholder="name" name="name" required>
+                        <br>
+                        <input class="w-100" type="text" placeholder="email" name="email" required >
+                        <br>
+                        <input class="w-100" type="text" placeholder="telefon" name="telefon" required>
+                        <br>
+                        <textarea class="w-100" placeholder="Note" name="note" required></textarea>
+                        <br>
+                        <input class="btn btn primary w-100 bg-black text-white r-12" type="submit" value="submit">
+                      </form>
+                  </div>
+                  <div class="col-md-2 col-lg-2">
+                      <div class="start-column2">
+                          <div class="start-frame15">
+                            <span class="start-text30 fw-bold">KONTAKTDATEN</span>
+                          </div>
+                          <div class="start-frame3 contact">
+                            <span class="start-text31 fw-bold">Address</span>
+                            <span class="start-text32">
+                              <span>Parchimer Allee 16</span>
+                              <br />
+                              <span>12359 Berlin</span>
+                            </span>
+                          </div>
+                          <div class="start-frame6 contact">
+                            <span class="start-text36 fw-bold">Phone Numbers</span>
+                            <span class="start-text37">
+                              <span>Office:</span>
+                              <br />
+                              <span>030 966 155 93</span>
+                            </span>
+                            <span class="start-text41">
+                              <span>Mobile:</span>
+                              <br />
+                              <span>0176 649 856 89</span>
+                            </span>
+                          </div>
+                          <div class="start-frame7 contact">
+                            <span class="start-text45 ">Email</span>
+                            <span class="start-text46 ">info@m-m-bauteam.de</span>
+                  </div>
+             </div>
+          </div>
+      </div>
+      
+    </div>
+
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/all.min.js')}}"></script>
+</body>
+</html>

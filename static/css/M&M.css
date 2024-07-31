@@ -1,0 +1,286 @@
+:root {
+    --red-color: red;
+    --black: rgba(24, 28, 32, 1);
+    --white: rgba(255, 255, 255, 1);
+    --gray:gray;
+    --white-gray: #fbfaf9;
+    --liter: #FF3398;
+    --liteg: #AAFFC9;
+    --liteb:#B6CFFF;
+    --lgray:#F7EFEF;
+};
+:host,html {
+    padding: 0;
+    margin: 0px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+
+
+  p, text, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    
+  }
+p {
+    color: black;
+    font-weight: 600;
+}
+
+.iframe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+
+/* Start navbar */
+
+.navbar .navbar-nav .ho {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    &:hover {
+        color: cornflowerblue;
+    }
+    &:target{
+        color: aqua;
+    }
+    &:active {
+    color: chartreuse;
+   }
+   &:focus {
+    color: crimson;
+   }
+}
+
+
+
+.kn {
+ 
+    background: linear-gradient(black, black) no-repeat;
+    background-position: center;
+    background-size: 100% 55%;
+    border-radius: 70px;
+
+}
+
+.kn:hover {
+    background: linear-gradient(cornflowerblue, cornflowerblue) no-repeat;
+    color: black;
+    background-position: center;
+    background-size: 100% 55%;
+    border-radius: 70px;
+    }
+
+/* End navbar */
+
+.wir .gray {
+    background-color: var(--white-gray);
+    text-align: left;
+    
+}
+
+
+
+
+/* Start contact */
+.info .note {
+    line-height: 10rem;
+}
+/* End contact */
+
+/* Start start-column2 */
+.start-column2 {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: start;
+
+}
+.start-column2 .start-text31 {
+    clear: both;
+   display: inline-block;
+   width: 100%;
+}
+.start-column2 .start-text32 {
+    clear: both;
+   display: inline-block;
+   width: 100%;
+}
+.start-column2 .start-text36 {
+    clear: both;
+   display: inline-block;
+   width: 100%;
+}
+.start-column2 .start-text37 {
+     clear: both;
+    display: inline-block;
+    width: 100%;
+}
+.start-column2 .start-text41 {
+    clear: both;
+   display: inline-block;
+   width: 100%;
+}
+.start-column2 .start-text45 {
+    clear: both;
+   display: inline-block;
+   width: 100%;
+}
+.submit{
+    border-radius: 12%;
+
+}
+
+.footer {
+    
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+   
+ 
+}
+.footer .row {
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(245 245 245);
+    border-radius: 10%;
+    
+}
+.footer .submit{
+    background-color: black;
+    color:white;
+    border-radius: 15%;
+} 
+
+.footer-bg{
+    background-color: rgb(245 245 245);
+}
+
+/* End start-column2 */
+
+/* 
+how to add border around text
+ h1 {
+    
+   padding: 5px;
+   border: 1px solid #000;
+}
+
+/* Start  map */
+map {
+    lement.style {
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        border-width: 0px;
+        margin: 0px;
+        cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+        touch-action: pan-x pan-y;
+    }
+   }
+
+/* End map */
+.one {
+    display: flex; align-items: center;
+    .paint {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+.mm {
+    margin-bottom: 10rem;
+}
+.par {
+    padding: 0;
+}
+
+
+.thegrid {
+    margin-top: 5rem;
+}
+
+tbody, td, tfoot, th, thead, tr { 
+    border-style: solid;
+    border-color: inherit;
+    border-width: inherit;
+    
+}
+
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+.bg-liteg{
+    background-color: #AAFFC9;
+}
+.bg-liter{
+    background-color: #FF3398;
+}
+.bg-liteb{
+    background-color: #B6CFFF;
+}
+.bg-gray{
+    background-color: var(--white-gray);
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media all and (min-width:0px) and (max-width:970px){
+    .theorder {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+
+    }
+    .img {
+        margin-top: 3px;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+
+ 
+}
+
+
+
+
+.box-sizing {
+    margin-right: 0px;
+    margin-left: 0px;
+}

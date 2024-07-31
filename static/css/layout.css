@@ -1,0 +1,60 @@
+:root{
+    --primary:rgb(226, 152, 13);
+    
+}
+.body {
+    font-size: xx-small;
+    font-stretch: expanded;
+    font-size: 16px;
+   
+}
+
+.custom-navbar {
+    padding: 0px;
+    .logo {
+
+        margin-top: 20px;
+        max-width: 125px;
+    }
+    li {
+        display: inline-block;
+        
+        a {
+            padding: 25px 25px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: x-large;
+            text-decoration: none;
+            color: black;
+            transition: 3s all ease;
+            &:hover{
+                color: aqua;
+            }
+            
+    }
+    }}
+    .btn {
+        text-justify: center;
+        margin-top: 2rem;
+        height: auto;
+        padding: 14px 30px;
+        border-radius: 4px 15px 4px 15px;
+        font-family: font-family-serif;
+        &:active, &:focus {
+            outline: black;
+            box-shadow: black;
+        }
+        &.btn-primary {
+            border-color: var(--primary);
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 1px 2px rgba(black, .07),
+                        0 2px 4px rgba(black, .07),
+                        0 4px 8px rgba(black, .07),
+                        0 8px 6px rgba(black, .07),
+                        0 16px 32px rgba(black, .07),
+                        0 32px 64px rgba(black, .07);
+            
+
+        }
+    }

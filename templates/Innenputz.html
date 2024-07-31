@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+  {% block content %}
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho start" aria-current="page" href="{{url_for('start')}}">Start</a>
+          </li>
+          <li class="nav-item">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/Innenputz.css')}}">
+            <a class="nav-link p-2 p-lg-3 ho Innenputz" href="{{url_for('Innenputz')}}">Innenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('aussenputz')}}">aussenputz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('Klinkerriemchen')}}">Klinkerriemchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-white kn" href="{{url_for('Kontact')}}">Kontact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mt-5 h-[150px] flex flex-col justify-center items-center text-[#181C20] text-center "><h2 class="text-[1.8rem] font-[600] leading-[1]">Professioneller Innenputz für Ihr Zuhause</h2><p class="text-[1.1rem] font-[600]">Perfekte Oberflächen für eine gemütliche Wohnatmosphäre</p></div>
+
+  <div class="flex flex-col w-full gap-4">
+        <div class="flex flex-row max-md:flex-col items-center justify-between gap-4 py-[20px] flex-row" >
+            <div class="container mb-5">
+                <h4 class="text-center mt-4 mb-4 fw-bold">Servicedetails</h4>
+            </div>
+            <div class="mt-4rem mm">
+                <div class="container ">
+                    <div class="row">
+                    
+                        <div class="col-md-6 col-lg-6 h-50 par mt-auto ">
+                            <h3 class="mb-3">Hochwertiger Innenputz für perfekte Wände</h3>
+                            <p >Unser Innenputzservice bietet Ihnen robuste und glatte Wände, die den Grundstein für jeden hochwertigen Innenraum legen. Mit präzisen Techniken und hochwertigen Materialien sorgen wir dafür, dass Ihre Wände eben, stark und bereit für weitere Veredelungen sind. Unser erfahrenes Team stellt sicher, dass jeder Quadratmeter perfekt ausgeführt wird, um sowohl funktionale als auch ästhetische Anforderungen zu erfüllen.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 mt-5">
+                            <img width="100%" src="{{url_for('static', filename='image/services2.e37a30ee.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="align-items-center mt-5 mm">
+            <div class="container">
+                <div class="row theorder">
+                    <div class="col-md-6 col-lg-6  col-sm-12 mt-5">
+                        <img width="100%" src="{{ url_for('static', filename='image/services1.85f1c56f.png')}}" alt="">
+        
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-5 mt-auto">
+                        <h3 class="mb-3">Perfekte Oberflächen mit hochwertigem Spachtel</h3>
+                        <p class="para">Unsere Spachtelarbeiten gewährleisten glatte und makellose Oberflächen, die als perfekte Basis für jeden Anstrich dienen. Durch den Einsatz von hochwertigen Spachtelmassen und präziser Verarbeitung füllen wir Risse und Unebenheiten, um eine ebene und gleichmäßige Oberfläche zu schaffen. Diese sorgfältige Vorbereitung sorgt dafür, dass Ihre Wände nicht nur gut aussehen, sondern auch langlebig und beständig bleiben.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-5 mm">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-md-6 col-lg-6 h-50 par mt-auto">
+                        <h3 class="mb-3">Hochwertiger Innenputz für perfekte Wände</h3>
+                        <p>Unser Innenputzservice bietet Ihnen robuste und glatte Wände, die den Grundstein für jeden hochwertigen Innenraum legen. Mit präzisen Techniken und hochwertigen Materialien sorgen wir dafür, dass Ihre Wände eben, stark und bereit für weitere Veredelungen sind. Unser erfahrenes Team stellt sicher, dass jeder Quadratmeter perfekt ausgeführt wird, um sowohl funktionale als auch ästhetische Anforderungen zu erfüllen.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 mt-5">
+                        <img width="100%" src="{{url_for('static', filename='image/services2.e37a30ee.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+      {% endblock %}
+
+ 
+  
+  

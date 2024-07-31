@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&M Bauteam Database</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css.map')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/M&M.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css')}}" />
+    <style>
+      .navbar {
+        border-bottom: 1px solid #333333;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mm">
+        <div class="container">
+          <a class="navbar-brand" href="{{url_for('start')}}">
+            <img src="{{url_for('static', filename='image/logo.png')}}" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho" aria-current="page" href="{{url_for('home')}}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho" href="{{url_for('enternew')}}">Add New Customer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3 ho"  href="{{url_for('list')}}">Review and Edit Customers list</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {% block nav2 %}
+      {% endblock nav2 %}
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/all.min.js')}}"></script>   
+</body>
+</html>
+      
